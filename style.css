@@ -10,12 +10,14 @@
     font-family: carbono;
     src: url(./carbono.ttf);
 }
+
 *{
     margin: 0;
     padding: 0; 
     box-sizing: border-box;
-    transition: 3s ease all;
+    transition: .5s ease all;
 }
+
 body{
     background:linear-gradient(#EDB307,#9E88AE);
     display: flex;
@@ -23,13 +25,15 @@ body{
     align-items: center;
     block-size: 100vh;
     font-family: 'Montserrat',sans-serif;
+    transition: none;
 }
+
 .padre{
 
     position: relative;
     background-color: white;
     width: 90vw;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     overflow: auto;
     
