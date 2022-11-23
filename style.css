@@ -30,11 +30,12 @@ body{
 
 .padre{
 
-    position: relative;
+    
     background-color: white;
     width: 90vw;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     overflow: auto;
     
 
@@ -46,25 +47,19 @@ body{
 
 }
 
-.line{
-    left: 50%;
-    top:3%;
-    position: absolute;
-    block-size: 95%;
-    inline-size: .3rem;
-    background-color: #B5A7BC;
-    border-radius: 1rem;
 
-}
 
 .izquierda{
+    
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    inline-size: 50%;
+    inline-size: 100%;
+    block-size:fit-content;
     padding: 1rem;
     
 }
+
 .foto{
 
     min-width: 80%;
@@ -129,12 +124,14 @@ p{
 
 }
 .descripcion{
-   
+ 
+    position: relative;
     display: grid;
-    margin-block: 1rem;
+    padding-block: 1rem;
     inline-size: fit-content;
     padding-left: .5rem;
     gap: .7rem;
+    text-align: center;
 
 }
 
@@ -146,8 +143,9 @@ p{
 
 .interes{
 
+    position: relative;
     display: grid;
-    margin-block: 1.5rem;
+    padding-block: 1.5rem;
     inline-size: 100%;
     gap: .7rem;
     justify-content: center;
@@ -189,8 +187,9 @@ p{
 
 .contacto{
 
+    position: relative;
     display: grid;
-    margin-block: 1rem;
+    padding-block: 1rem;
     inline-size: 100%;
     padding-left: .5rem;
     gap: 1.8rem;
@@ -236,17 +235,34 @@ p{
 }
 
 .derecha{
+    
+    position: relative;
     display: flex;
     flex-direction: column;
     align-content: center;
-    width: 43vw;
+    inline-size:100%;
+    height: fit-content;
     padding: 12px;
     
 }
 
+
+.line{
+    left: 0%;
+    top:3%;
+    position: absolute;
+    height: 95%;
+    inline-size: .3rem;
+    background-color: #B5A7BC;
+    border-radius: 1rem;
+    display: none
+
+}
+
 .habilidades{
 
-    margin-top: 20px;
+    position: relative;
+    padding-block: 20px;
     margin-left: 1rem;
     display: flex;
     flex-direction: column;
@@ -281,10 +297,11 @@ p{
 }
 
 
-.imagenesHabilidades {
+.imagenesHabilidades,.imagenesHabilidades2 {
 
    display: flex;
    inline-size: 100%;
+   justify-content: center
 
 
     /* display: flex;
@@ -295,12 +312,6 @@ p{
     "a b"; */
 
 }
-
-.imagenesHabilidades2{
-    display: flex;
-    inline-size: 100%;
-}
-
 
 .ideaRamdon{
     width: 20vw;
@@ -313,10 +324,12 @@ p{
 
 
 .programas{
+
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    padding: 1.5rem
 
 }
 
@@ -389,7 +402,9 @@ p{
 
 
 .estudioyexperiencia{
-    margin-top: 20px;
+
+    position: relative;
+    padding-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -400,18 +415,17 @@ p{
     font-family: 'Barlow', sans-serif;
     color: #F2F2F2;
     text-align: center;
-    padding-block: .25rem;
+    padding-block: 0.25rem;
     inline-size: fit-content;
     justify-self: center;
-    padding-inline: .70rem;
+    padding-inline: 0.7rem;
     background-color: #9380A6;
     border-radius: 20px;
-    font-size: 10px;
 }
 
 
 
-.estudios img{
+.estudio img{
     width: 30%;
     padding: 5px;
     padding-block: 15px;
@@ -438,7 +452,52 @@ p{
     width: fit-content;
 }
 
+[class*="plataform-"]{
 
+    position: absolute;
+    inline-size: 90%;
+    background-color: #8f75aa;
+    block-size: 5px;
+    border-radius:1rem;
+    left: 4.5%;
+    top: 100%;
+
+}
+
+@media screen and (min-width: 480px) {
+
+
+    .padre{
+
+        flex-direction:row
+
+    }
+
+    .line{
+
+        display: block;
+
+    }
+
+    .descripcion{
+
+        text-align: start;
+
+    }
+
+    .derecha{
+
+        width: 43vw;
+
+    }
+
+    [class*="plataform-"]{
+
+        display: none;
+    
+    }
+
+}
 
 @media screen and (min-width: 660px) {
 
@@ -453,7 +512,7 @@ p{
 
 
         inline-size: 600px;
-        padding-inline: 1rem
+        padding-inline: 1rem;
 
     }
 
@@ -463,11 +522,6 @@ p{
 
     }
 
-    .line{
-
-        left:45%
-
-    }
 
     .izquierda{
 
@@ -622,16 +676,9 @@ p{
         margin-left: 60px;
     }
     
-    
-    
-    .imagenesHabilidades  img{
+    .imagenesHabilidades  img,.imagenesHabilidades2 img{
         width: 90px;
     }
-    
-    .imagenesHabilidades2 img{
-        width: 90px;
-    }
-    
     
     .imagenesHabilidades {
         margin-top: 5%;
@@ -780,7 +827,8 @@ p{
     
     
     .estudios img{
-        width: 5vw;
+        block-size:4rem;
+        inline-size: 5rem;
         padding: 5px;
         padding-block: 1px;
         margin-left: 10px;
