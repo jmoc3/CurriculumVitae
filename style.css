@@ -99,3 +99,54 @@ nav{
     justify-content: space-evenly;
 }
 
+
+
+.header{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.header span{
+    margin-top: 35px;
+    margin-left: 100px;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.header input{
+    padding: 5px 100px 5px 10px;
+    border-radius: 20px;
+    background-color: rgb(201, 221, 221);
+    font-size: 15px;
+    margin: 35px 0 0 900px;
+}
+
+.search-icon{
+    position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 1405px;
+	top: 29%;
+	transform: translateY(-50%);
+}
+
+.profileImg{
+    margin-left: 100px;
+}
+
+.expensesActivity{
+    position: relative;
+    border: 2px solid var(--gris-iconos);
+    margin-left: 130px;
+}
+
+.expensesActivity .line{
+    left: 0%;
+    top:85%;
+    position: absolute;
+    height: 1%;
+    inline-size: 50%;
+    background-color: var(--gris-iconos);
+    border-radius: 1rem;
+}
