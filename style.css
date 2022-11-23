@@ -1,0 +1,19 @@
+:root{
+
+    --azul-barras-claro:#B5EAEE;
+    --azul-aguaMarina: #19C0CC;
+    --azul: #2253DD;
+    --azul-oscuro: #164B51;
+    --gris-iconos: #49727B;
+    --naranja: #FA9111;
+    --naranja-Actividades: #F96735;
+
+}
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
