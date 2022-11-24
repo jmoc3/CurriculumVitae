@@ -16,9 +16,9 @@
 }
 body{
     block-size: 100vh;
+    display: flex;
 }
 nav{
-    position: relative;
     inline-size: 5vw;
     block-size:inherit;
     background-color: var(--azul-oscuro);
