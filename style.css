@@ -13,12 +13,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body{
     block-size: 100vh;
     display: flex;
+    justify-content: space-between;
 }
 nav{
+    position: relative;
     inline-size: 5vw;
     block-size:inherit;
     background-color: var(--azul-oscuro);
@@ -103,50 +106,42 @@ nav{
 
 
 .header{
-    position: absolute;
+
 	width: 70vw;
-	left: 75px;
-	top: 11%;
-	transform: translateY(-50%);
-    font-family: 'Montserrat',sans-serif;
+
 }
 
 .header .Title{
-    margin-left: 90px;
+
     font-weight: bolder;
     font-size: 18px;
+
 }
 
 .header input{
+
     border: rgba(232, 239, 239, 0.95);
-    position: absolute;
     padding: 8px 150px 10px 10px;
     border-radius: 20px;
     background-color: rgba(232, 239, 239, 0.95);
     font-size: 15px;
-    margin: 0px 0 0 532px;
+
 }
 
 .search-icon{
-    position: absolute;
+    
 	width: 20px;
 	height: 20px;
-	left: 1040px;
-	top: 14%;
-	transform: translateY(-50%);
 }
 
 .profileImg{
     margin-top: 20px;
-    margin-left: 85px;
 }
 
 .saludo{
-    top:50%;
     width: 27%;
     text-align:center;
     margin:0 auto;
-    position:absolute;
     font-size: 20px;
 }
 
@@ -155,26 +150,20 @@ nav{
 }
 
 .text{
-    top:76%;
+    
     width: 33%;
     color: rgba(118, 118, 118);
     text-align:center;
     margin:0 auto;
-    position:absolute;
     font-size: 13px;
 }
 
 .expensesActivity{
+
+    position: relative;
     font-family: 'Montserrat',sans-serif;
-    position: absolute;
     border: 3px solid rgba(232, 239, 239, 0.95);
     border-radius: 20px;
-    width: 53vw;
-	height: 450px;
-	left: 20px;
-	top: 46%;
-	transform: translateY(-50%);
-    margin-left: 130px;
 }
 
 .context{
@@ -250,4 +239,270 @@ nav{
 
 .Income-Expenses .descripcion{
     padding-left: 388px;
+}
+
+.right{
+
+    block-size:fit-content;
+    border-left: thin solid rgba(232, 239, 239, 0.95);
+
+}
+
+.perfil{
+
+    display: flex;
+    gap: 6rem;
+
+    padding-inline: 1rem;
+
+    border-bottom: thin solid rgba(232, 239, 239, 0.95);
+
+}
+
+.perfil .icons{
+
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    
+    block-size: inherit;
+
+}
+
+.perfil .imgPerfil{
+
+    display: flex;
+    align-items: center;
+
+    gap: .5rem;
+    text-align: end;
+
+}
+
+.perfil .icons .fond{
+
+    padding: .5rem;
+    border-radius: 50%;
+
+     background: rgba(232, 239, 239, 0.95)
+
+}
+
+.perfil .textoPerfil{
+
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+
+}
+
+.perfil .textoPerfil span{
+
+    color: rgb(88, 95, 95)
+
+}
+
+.fecha{
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 2rem 0 2rem;
+    border-bottom: 1px solid rgba(232, 239, 239, 0.95);
+
+}
+
+.fecha .lineaFecha{
+
+    position: absolute;
+    top: 99%;
+
+    inline-size: 100%;
+    block-size: 3px;
+
+    background-color: var(--azul-oscuro)
+
+}
+
+.fecha .fechaDes{
+
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+.fecha .fechaDes span{
+
+    font-size:1.5rem
+
+}
+
+.fecha .fechaDes .flechitas{
+
+    display: flex;
+   gap: 1rem;
+
+}
+
+.fecha .fechaDias{
+
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+
+}
+
+.fecha .fechaDias .dayCircle{
+
+    text-align: center;
+    
+    background-color: rgba(232, 239, 239, 0.95);
+    padding: .8rem;
+    border-radius: 50%;
+
+}
+
+.fecha .fechaDias .dayCircle:hover{
+    
+    transform: scale(1.1);
+    background-color: var(--azul-oscuro);
+    color: white;
+    cursor: pointer; 
+    
+    transition: all ease .3s;
+
+}
+
+[class*="dia"]{
+
+    display: grid;
+    gap: .5rem;
+    padding-bottom: 2rem;
+    
+}
+
+.puntos{
+    
+    display: flex;
+    gap: .2rem;
+    justify-content: center;
+    margin-bottom: .5rem;
+    
+}
+
+[class*="punto-"]{
+
+    inline-size: 7px;
+    block-size: 7px;
+    
+    background-color: black;
+    border-radius: 50%;
+
+}
+
+.dia-1 .puntos .punto-1{
+
+    background-color: var(--azul-aguaMarina)
+    
+}
+.dia-1 .puntos .punto-2{
+    
+    background-color: var(--naranja)
+    
+}
+
+
+.dia-2 .puntos .punto-1{
+
+    background-color: var(--naranja)
+    
+}
+
+.dia-2 .puntos .punto-2{
+    
+    background-color: var(--azul)
+
+}
+
+.dia-3{
+    
+    position: relative;
+    
+}
+
+.dia-3 .puntos .punto-1{
+    
+    background-color: var(--azul-aguaMarina)
+    
+}
+
+.dia-3 .puntos .punto-2{
+
+    background-color: var(--naranja)
+    
+}
+
+.dia-3 .puntos .punto-3{
+    
+    background-color: var(--azul)
+    
+}
+
+.dia-4 .puntos .punto-1{
+    
+    background-color: var(--azul-aguaMarina)
+    
+}
+
+.dia-4 .puntos .punto-2{
+
+    background-color: var(--azul)
+    
+}
+
+.dia-5 .puntos .punto-1{
+
+    background-color: var(--azul-aguaMarina)
+    
+}
+
+.dia-5 .puntos .punto-2{
+    
+    background-color: var(--naranja)
+    
+}
+
+.dia-5 .puntos .punto-3{
+    
+    background-color: var(--azul)
+    
+}
+
+.dia-6 .puntos .punto-1{
+    
+    background-color: var(--naranja)
+    
+}
+
+.calendario{
+    
+    display:flex;
+    border-bottom: thin solid rgba(232, 239, 239, 0.95);
+    
+}
+
+.calendario .horas{
+    
+    display:grid;
+    gap: 3rem;
+    
+    padding: 1.5rem 3.2rem
+    
+}
+
+[class*="asunto-"]{
+
+    display: flex;
+    
 }
