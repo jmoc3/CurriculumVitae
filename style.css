@@ -18,7 +18,7 @@ body{
     block-size: 100vh;
 }
 nav{
-    
+    position: relative;
     inline-size: 5vw;
     block-size:inherit;
     background-color: var(--azul-oscuro);
@@ -41,6 +41,7 @@ nav{
     justify-content: center;
     align-items:center ;
     padding: 7px;
+    cursor: pointer;
     border-radius: 50%;
 }
 .iconM{
@@ -102,51 +103,151 @@ nav{
 
 
 .header{
-    position: relative;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+	width: 70vw;
+	left: 75px;
+	top: 11%;
+	transform: translateY(-50%);
+    font-family: 'Montserrat',sans-serif;
 }
 
-.header span{
-    margin-top: 35px;
-    margin-left: 100px;
+.header .Title{
+    margin-left: 90px;
     font-weight: bolder;
-    font-size: 25px;
+    font-size: 18px;
 }
 
 .header input{
-    padding: 5px 100px 5px 10px;
+    border: rgba(232, 239, 239, 0.95);
+    position: absolute;
+    padding: 8px 150px 10px 10px;
     border-radius: 20px;
-    background-color: rgb(201, 221, 221);
+    background-color: rgba(232, 239, 239, 0.95);
     font-size: 15px;
-    margin: 35px 0 0 900px;
+    margin: 0px 0 0 532px;
 }
 
 .search-icon{
     position: absolute;
 	width: 20px;
 	height: 20px;
-	left: 1405px;
-	top: 29%;
+	left: 1040px;
+	top: 14%;
 	transform: translateY(-50%);
 }
 
 .profileImg{
-    margin-left: 100px;
+    margin-top: 20px;
+    margin-left: 85px;
+}
+
+.saludo{
+    top:50%;
+    width: 27%;
+    text-align:center;
+    margin:0 auto;
+    position:absolute;
+    font-size: 20px;
+}
+
+.header .saludo1{
+    font-weight: bolder;
+}
+
+.text{
+    top:76%;
+    width: 33%;
+    color: rgba(118, 118, 118);
+    text-align:center;
+    margin:0 auto;
+    position:absolute;
+    font-size: 13px;
 }
 
 .expensesActivity{
-    position: relative;
-    border: 2px solid var(--gris-iconos);
+    font-family: 'Montserrat',sans-serif;
+    position: absolute;
+    border: 3px solid rgba(232, 239, 239, 0.95);
+    border-radius: 20px;
+    width: 53vw;
+	height: 450px;
+	left: 20px;
+	top: 46%;
+	transform: translateY(-50%);
     margin-left: 130px;
 }
 
+.context{
+    margin: 35px 0 5px 35px;
+}
+
+.context .date{
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.context .remaining-money{
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.context h3{
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+.context p{
+    margin-top: 20px;
+}
+
+.context .porcentaje{
+    color: rgb(5, 160, 5);
+}
+
+.context .days{
+    color: rgba(118, 118, 118);
+}
+
 .expensesActivity .line{
-    left: 0%;
-    top:85%;
+    left: 3%;
+    top:65%;
     position: absolute;
-    height: 1%;
-    inline-size: 50%;
-    background-color: var(--gris-iconos);
+    height: .5%;
+    inline-size: 93%;
+    background-color: rgba(232, 239, 239, 0.95);
     border-radius: 1rem;
+}
+
+.Income-Expenses{
+    margin: 80px 0 5px 35px;
+}
+
+.Income-Expenses .cash-green-icon{
+    position: absolute;
+}
+
+.Income-Expenses .total-income{
+    font-weight: bold;
+    font-size: 30px;
+    padding-left: 78px;
+}
+
+.Income-Expenses .total-expenses{
+    font-weight: bold;
+    font-size: 30px;
+    padding-left: 336px;
+}
+
+.Income-Expenses .cash-red-icon{
+    position: absolute;
+    margin-left: 260px;
+}
+
+.Income-Expenses p{
+    margin-top: 10px;
+    margin-left: 78px;
+}
+
+.Income-Expenses .descripcion{
+    padding-left: 388px;
 }
