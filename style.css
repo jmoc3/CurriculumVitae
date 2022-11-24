@@ -320,6 +320,7 @@ nav{
     inline-size: 100%;
     block-size: 3px;
 
+    display: none;
     background-color: var(--azul-oscuro)
 
 }
@@ -363,7 +364,7 @@ nav{
 
 }
 
-.fecha .fechaDias .dayCircle:hover{
+.fecha .fechaDias .dayCircle:hover {
     
     transform: scale(1.1);
     background-color: var(--azul-oscuro);
@@ -371,6 +372,12 @@ nav{
     cursor: pointer; 
     
     transition: all ease .3s;
+
+}
+
+.fecha .fechaDias .dayCircle:hover .fecha .lineaFecha{
+    
+    display: block
 
 }
 
