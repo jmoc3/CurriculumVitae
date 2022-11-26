@@ -1,7 +1,7 @@
 :root{
 
     --azul-barras-claro:#B5EAEE;
-    --azul-aguaMarina: #19C0CC;
+    --azul-aguaMarina: #19c0cc;
     --azul: #2253DD;
     --azul-oscuro: #11383d;
     --azul-claro: #1B4F53;
@@ -21,9 +21,6 @@ body{
     justify-content: space-between;
 }
 nav{
-    position: relative;
-    inline-size: 5vw;
-    block-size:inherit;
     background-color: var(--azul-oscuro);
 }
 
@@ -33,8 +30,9 @@ nav{
     justify-content: center;
     inline-size: inherit;
     background-color: var(--azul-claro);
-    inline-size: 4.9vw;
+
 }
+
 .mont{
     block-size:6vh;
     
@@ -53,7 +51,7 @@ nav{
     align-items:center ;
     padding: 5px 6px 4px 6px;
     border-radius: 50%;
-    
+    cursor: pointer;
 }
 .iconF{
     display: flex;
@@ -107,29 +105,50 @@ nav{
 .mitad {
 
     /*width:50% ;*/
+
+    
     display: flex;
-    block-size: fit-content;
+    gap: 2.3rem;
+    block-size: inherit;
+    inline-size: 100%;
+    overflow-x: hidden;
+    
+    padding: 2rem 4rem;
     flex-direction: column;
 
 
 }
 
+.mitad::-webkit-scrollbar{
+
+    inline-size: .3rem;
+    background-color: var(--azul-claro);
+    
+}
+
+.mitad::-webkit-scrollbar-thumb{
+    
+    border-radius: 1rem;
+    background-color: var(--naranja);
+
+}
+
 
 .header{
-	width: 70vw;
-    margin: 16px 0 0 45px;
+
+    display: grid;
+    gap: 2rem;
+    
 }
 
 .header .Title{
-    margin-left: 25px;
     font-weight: bolder;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 .header input{
     border: rgba(232, 239, 239, 0.95);
     padding: 8px 150px 10px 10px;
-    margin: 15px  0  0 825px;
     border-radius: 20px;
     background-color: rgba(232, 239, 239, 0.95);
     font-size: 15px;
@@ -137,22 +156,26 @@ nav{
 
 .search-icon{
     position: absolute;
-    left: 73.4%;
-    top: 4%;
+    right: 10px;
+    top: 24%;
 	width: 20px;
 	height: 20px;
 }
 
 .profileImg{
-    margin-left: 25px;
-    margin-top: 20px;
+    display: flex;
+    gap: 2rem;
+}
+
+.profileText{
+
+    display: grid;
+    gap: .7rem;
+    align-content: center;
+
 }
 
 .saludo{
-    position: absolute;
-    left: 13.5%;
-    margin: 0 auto;
-    bottom: 85%;
     font-size: 20px;
 }
 
@@ -160,17 +183,23 @@ nav{
     font-weight: bolder;
 }
 
+.search{
+
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+}
+
 .text{
-    width: 33%;
     color: rgba(118, 118, 118);
-    text-align:center;
-    margin:0 auto;
-    padding-left: 8px;
     font-size: 13px;
 }
 
 .expensesActivity{
-    margin: 50px 0 0 60px;
+    display: grid;
+    gap: 4rem;
+    padding: 25px;
     position: relative;
     font-family: 'Montserrat',sans-serif;
     border: 3px solid rgba(232, 239, 239, 0.95);
@@ -178,7 +207,7 @@ nav{
 }
 
 .context{
-    margin: 35px 0 5px 35px;
+    
 }
 
 .context .date{
@@ -187,17 +216,56 @@ nav{
 }
 
 .context .remaining-money{
-    margin-top: 50px;
+    margin-top: 20px;
     font-weight: bold;
 }
 
+.topExp{
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#graph{
+
+    left: 28%;
+
+}
+
+#graph :hover{
+    color: var(--azul);
+    cursor: pointer;
+}
+
 .context h3{
-    margin-top: 10px;
     font-size: 40px;
 }
 
 .context p{
-    margin-top: 20px;
+    margin-top: 10px;
+}
+
+.month{
+    margin-top: 13px;
+    margin-left: 695px;
+}
+
+.spanes{
+
+    display: flex;
+    gap: 1rem;
+
+}
+
+.spancito {
+
+    position: relative;
+    right: 13%;
+    top: 95%;
+    display: flex;
+    gap: 3.2rem;
+
 }
 
 .context .porcentaje{
@@ -210,7 +278,7 @@ nav{
 
 .expensesActivity .line{
     left: 3%;
-    top:65%;
+    top: 67%;
     position: absolute;
     height: .5%;
     inline-size: 93%;
@@ -220,7 +288,6 @@ nav{
 }
 
 .Income-Expenses{
-    margin: 80px 0 5px 35px;
 }
 
 .Income-Expenses .cash-green-icon{
@@ -258,20 +325,19 @@ nav{
 
 
 .hijos{
-    
+
     display: flex;
-    padding-left: 60px;
-    padding-top: 19px;
+    justify-content: space-between;
     gap: 1rem;
 }
 
 
 
 .parte1{
-    width:50% ;
+    width:45% ;
     background-color: #FFFFFF;
     border-radius: 1rem;
-    border: thin solid #F2F2F2 ;
+    border: 3px solid #F2F2F2 ;
     border-color: #F2F2F2 ;
     padding: 20px;
 
@@ -411,10 +477,10 @@ nav{
 .parte2{
     display: grid;
     grid-template-areas: "a b";
-    width: 50% ;
+    width: 45% ;
     background-color: #FFFFFF;
     border-radius: 1rem;
-    border: thin solid #F2F2F2 ;
+    border: 3px solid #F2F2F2 ;
     border-color: #F2F2F2 ;
     padding: 20px;
 }
@@ -452,17 +518,32 @@ nav{
 
 .right{
     
-    block-size:fit-content;
+    block-size:inherit;
+    padding: .5rem 2rem;
+    display:grid;
+    gap: 1.5rem;
     border-left: thin solid rgba(232, 239, 239, 0.95);
+
+}
+
+.right::-webkit-scrollbar{
+
+    inline-size: .3rem;
+    background-color: var(--azul-claro);
+    
+}
+
+.right::-webkit-scrollbar-thumb{
+    
+    border-radius: 1rem;
+    background-color: var(--naranja);
 
 }
 
 .perfil{
 
     display: flex;
-    gap: 6rem;
-
-    padding-inline: 1rem;
+    justify-content: space-between;
 
     border-bottom: thin solid rgba(232, 239, 239, 0.95);
 
@@ -516,7 +597,6 @@ nav{
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding: 2rem 2rem 0 2rem;
     border-bottom: 1px solid rgba(232, 239, 239, 0.95);
 
 }
@@ -565,11 +645,18 @@ nav{
 
 .fecha .fechaDias .dayCircle{
 
+    font-size: 10px;
     text-align: center;
     
     background-color: rgba(232, 239, 239, 0.95);
-    padding: .8rem;
+    padding: .5rem;
     border-radius: 50%;
+
+}
+
+.dayText{
+
+    font-size: 12px;
 
 }
 
@@ -594,7 +681,7 @@ nav{
 
     display: grid;
     gap: .5rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     
 }
 
@@ -705,16 +792,23 @@ nav{
     
     display:flex;
     border-bottom: thin solid rgba(232, 239, 239, 0.95);
-    
+    gap: 2rem;
 }
 
 .calendario .horas{
     
-    display:grid;
-    gap: 3rem;
+    gap: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
     
-    padding: 1.5rem 3.2rem
     
+}
+
+.calendario .hora{
+
+    inline-size: 5rem;
+
 }
 
 [class*="asunto-"]{
@@ -724,17 +818,17 @@ nav{
     inline-size:18.5vw;
     border-radius: 15px;
     padding:8px;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.541);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.541);
 }
 .asunto-1{
     margin-top: 17px;
     background-color: var(--azul-aguaMarina);
 }
 .asunto-1 .texto{
-    padding-left: 10px;
+    inline-size: 70%;
 }
 .asunto-2{
-    margin-bottom: 55px;
+    margin-bottom: 2rem;
     background-color: var(--naranja);
 }
 .asunto-2 .texto{
@@ -743,6 +837,19 @@ nav{
 .texto{
     color:white;
 }
+
+.taskTitle{
+
+    font-size: 15px;
+
+}
+
+.taskDesc{
+
+    font-size: 12px;
+
+}
+
 .icono{
     background-color: white;
     padding: 10px;
@@ -759,9 +866,8 @@ nav{
 }
 .asu{
     display: flex;
+    gap: 1rem;
     flex-direction: column;
-    justify-content:space-evenly;
-    block-size: 40vh;
 }
 .title{
     margin-top: 10px;
@@ -769,13 +875,11 @@ nav{
     justify-content: space-between;
 }
 .Recent{
-    margin-left: 50px;
-    inline-size: 90%;
+    inline-size: 100%;
 }
 .pun{
     display: flex;
     align-items: center;
-    inline-size: 12%;
 }
 .task{
     margin-top: 10px;
@@ -783,8 +887,6 @@ nav{
     justify-content: space-around;
 }
 .img{
-    margin-left: 13px;
-    inline-size: 30%;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -813,16 +915,9 @@ nav{
     color:var(--naranja-Actividades)
 }
 .desc{
-    position: relative;
-    left: 75px;
     padding:  15px 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content:space-between;
     border: solid 1px rgba(162, 180, 180, 0.979);
     border-radius: 15px;
-    block-size: 14vh;
-    inline-size: 19vw;
 }
 .descT{
     color: rgba(88, 105, 105, 0.979);
