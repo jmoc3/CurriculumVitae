@@ -79,12 +79,17 @@
     <div class="mitad">
 
         <div class="header">
-            <span class="Title">Dashboard</span> 
-            <input type="text" placeholder="Search properties, tasks, etc">
-            <svg xmlns="http://www.w3.org/2000/svg" class="search-icon" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(118, 118, 118);transform: msFilter"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg>
+            <div class="search">
+                <span class="Title">Dashboard</span> 
+                <input type="text" placeholder="Search properties, tasks, etc">
+                <svg xmlns="http://www.w3.org/2000/svg" class="search-icon" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(118, 118, 118);transform: msFilter"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg>
+            </div>
             <div class="profileImg">
-                <img src="https://i.ibb.co/y64YYDn/client.png" alt=""><p class="saludo">Hi, <span class="saludo1">Maurice</span></p>
-                <span class="text">Here's your activity today, take a moment to have look at this</span>
+                <img src="https://i.ibb.co/y64YYDn/client.png" alt="">
+                <div class="profileText">
+                    <p class="saludo">Hi, <span class="saludo1">Maurice</span></p>
+                    <span class="text">Here's your activity today, take a moment to have look at this</span>
+                </div>
             </div>
         </div>
             <div class="expensesActivity">
@@ -204,7 +209,7 @@
                         <div class="propiedad1">
         
                             <div class="numeroyCuadrito">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="" viewBox="0 0 24 24" style="fill: #2561D9;transform: rotate(90deg);msFilter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);"><path d="M17 2H7C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="" viewBox="0 0 24 24" style="fill: #2561D9;transform: rotate(90deg);"><path d="M17 2H7C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5z"></path></svg>
                                 <span>298</span>
                             </div>
         
@@ -220,7 +225,7 @@
         
                         <div class="propiedad2">
                             <div class="numeroyCuadrito">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="" viewBox="0 0 24 24" style="fill: #19C0CC;transform: rotate(90deg);msFilter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);"><path d="M17 2H7C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="" viewBox="0 0 24 24" style="fill: #19C0CC;transform: rotate(90deg);"><path d="M17 2H7C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5z"></path></svg>
                                 <span>249</span>
                             </div>
         
@@ -236,7 +241,7 @@
         
                         <div class="propiedad3">
                             <div class="numeroyCuadrito">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="" viewBox="0 0 24 24" style="fill: #FA9111; transform: rotate(90deg);msFilter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);"><path d="M17 2H7C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="" viewBox="0 0 24 24" style="fill: #FA9111; transform: rotate(90deg);"><path d="M17 2H7C4.243 2 2 4.243 2 7v10c0 2.757 2.243 5 5 5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5z"></path></svg>
                                 <span>85</span>
                             </div>
         
@@ -402,8 +407,8 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #19C0CC"><path d="M21 20V6c0-1.103-.897-2-2-2h-2V2h-2v2H9V2H7v2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2zM9 18H7v-2h2v2zm0-4H7v-2h2v2zm4 4h-2v-2h2v2zm0-4h-2v-2h2v2zm4 4h-2v-2h2v2zm0-4h-2v-2h2v2zm2-5H5V7h14v2z"></path></svg>
                         </div>
                         <div class="texto">
-                            <h4>Monthly - Landscaping</h4>
-                            <span>Internal Task</span>
+                            <h4 class="taskTitle">Monthly - Landscaping</h4>
+                            <span class="taskDes">Internal Task</span>
                         </div>
     
                     </div>
@@ -414,8 +419,8 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #FA9111;"><path d="m14.303 6-3-2H6V2H4v20h2v-8h4.697l3 2H20V6z"></path></svg>
                         </div>
                         <div class="texto">
-                            <h4>Broken Clamp</h4>
-                            <span>Maintenance Request</span>
+                            <h4 class="taskTitle">Broken Clamp</h4>
+                            <span class="taskDes">Maintenance Request</span>
                         </div>
     
                     </div>
