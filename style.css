@@ -1,7 +1,7 @@
 :root{
 
     --azul-barras-claro:#B5EAEE;
-    --azul-aguaMarina: #19C0CC;
+    --azul-aguaMarina: #19c0cc;
     --azul: #2253DD;
     --azul-oscuro: #11383d;
     --azul-claro: #1B4F53;
@@ -51,7 +51,7 @@ nav{
     align-items:center ;
     padding: 5px 6px 4px 6px;
     border-radius: 50%;
-    
+    cursor: pointer;
 }
 .iconF{
     display: flex;
@@ -174,7 +174,7 @@ nav{
 }
 
 .saludo{
-    font-size: 2rem;
+    font-size: 20px;
 }
 
 .header .saludo1{
@@ -195,6 +195,8 @@ nav{
 }
 
 .expensesActivity{
+    display: grid;
+    gap: 3rem;
     padding: 25px;
     position: relative;
     font-family: 'Montserrat',sans-serif;
@@ -216,13 +218,62 @@ nav{
     font-weight: bold;
 }
 
+.topExp{
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#graph{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+#graph :hover{
+    color: var(--azul);
+    cursor: pointer;
+}
+
 .context h3{
-    margin-top: 10px;
     font-size: 40px;
 }
 
 .context p{
-    margin-top: 20px;
+    margin-top: 10px;
+}
+
+.month{
+    margin-top: 13px;
+    margin-left: 695px;
+}
+
+.spanes{
+
+    display: flex;
+    gap: 1rem;
+
+}
+
+.span1{
+}
+
+.span2{
+}
+
+
+.span3{
+}
+
+.span4{
+}
+
+.span5{
+}
+
+.span6{
 }
 
 .context .porcentaje{
@@ -235,7 +286,7 @@ nav{
 
 .expensesActivity .line{
     left: 3%;
-    top:65%;
+    top: 69%;
     position: absolute;
     height: .5%;
     inline-size: 93%;
@@ -244,7 +295,7 @@ nav{
 }
 
 .Income-Expenses{
-    margin: 80px 0 5px 35px;
+    margin: 30px 0 5px 35px;
 }
 
 .Income-Expenses .cash-green-icon{
@@ -282,18 +333,20 @@ nav{
 
 
 .hijos{
-    
+
     display: flex;
+    padding-top: 10px;
+    padding-left: 55px;
     gap: 1rem;
 }
 
 
 
 .parte1{
-    width:50% ;
+    width:45% ;
     background-color: #FFFFFF;
     border-radius: 1rem;
-    border: thin solid #F2F2F2 ;
+    border: 3px solid #F2F2F2 ;
     border-color: #F2F2F2 ;
     padding: 20px;
 
@@ -433,10 +486,10 @@ nav{
 .parte2{
     display: grid;
     grid-template-areas: "a b";
-    width: 50% ;
+    width: 45% ;
     background-color: #FFFFFF;
     border-radius: 1rem;
-    border: thin solid #F2F2F2 ;
+    border: 3px solid #F2F2F2 ;
     border-color: #F2F2F2 ;
     padding: 20px;
 }
