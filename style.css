@@ -105,6 +105,8 @@ nav{
 .mitad {
 
     /*width:50% ;*/
+
+    
     display: flex;
     gap: 2.3rem;
     block-size: inherit;
@@ -196,7 +198,7 @@ nav{
 
 .expensesActivity{
     display: grid;
-    gap: 3rem;
+    gap: 4rem;
     padding: 25px;
     position: relative;
     font-family: 'Montserrat',sans-serif;
@@ -205,7 +207,7 @@ nav{
 }
 
 .context{
-    margin: ;
+    
 }
 
 .context .date{
@@ -227,8 +229,7 @@ nav{
 
 #graph{
 
-    display: flex;
-    flex-direction: column;
+    left: 28%;
 
 }
 
@@ -257,23 +258,14 @@ nav{
 
 }
 
-.span1{
-}
+.spancito {
 
-.span2{
-}
+    position: relative;
+    right: 13%;
+    top: 95%;
+    display: flex;
+    gap: 3.2rem;
 
-
-.span3{
-}
-
-.span4{
-}
-
-.span5{
-}
-
-.span6{
 }
 
 .context .porcentaje{
@@ -286,7 +278,7 @@ nav{
 
 .expensesActivity .line{
     left: 3%;
-    top: 69%;
+    top: 67%;
     position: absolute;
     height: .5%;
     inline-size: 93%;
@@ -295,7 +287,6 @@ nav{
 }
 
 .Income-Expenses{
-    margin: 30px 0 5px 35px;
 }
 
 .Income-Expenses .cash-green-icon{
@@ -335,8 +326,7 @@ nav{
 .hijos{
 
     display: flex;
-    padding-top: 10px;
-    padding-left: 55px;
+    justify-content: space-between;
     gap: 1rem;
 }
 

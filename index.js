@@ -13,7 +13,8 @@ Morris.Bar({
     labels: ['y'],
     grid: false,
     axes: false,
-    barSizeRatio: 0.8,
+    barSizeRatio: .8,
+  
     barColors: function (row, series, type) {
       if (type === 'bar') {
         var aqua = Math.ceil(0 * row.y / this.ymax);
