@@ -1,7 +1,7 @@
 :root{
 
     --azul-barras-claro:#B5EAEE;
-    --azul-aguaMarina: #19C0CC;
+    --azul-aguaMarina: #19c0cc;
     --azul: #2253DD;
     --azul-oscuro: #11383d;
     --azul-claro: #1B4F53;
@@ -53,7 +53,7 @@ nav{
     align-items:center ;
     padding: 5px 6px 4px 6px;
     border-radius: 50%;
-    
+    cursor: pointer;
 }
 .iconF{
     display: flex;
@@ -117,10 +117,12 @@ nav{
 
 .header{
 	width: 70vw;
-    margin: 16px 0 0 45px;
+    margin: 0px 0 0 45px;
 }
 
 .header .Title{
+    position: absolute;
+    margin-top: 10px;
     margin-left: 25px;
     font-weight: bolder;
     font-size: 18px;
@@ -137,22 +139,22 @@ nav{
 
 .search-icon{
     position: absolute;
-    left: 73.4%;
-    top: 4%;
+    left: 67.5%;
+    top: 2.5%;
 	width: 20px;
 	height: 20px;
 }
 
 .profileImg{
     margin-left: 25px;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 .saludo{
     position: absolute;
-    left: 13.5%;
+    left: 13.6%;
     margin: 0 auto;
-    bottom: 85%;
+    bottom: 88%;
     font-size: 20px;
 }
 
@@ -161,16 +163,18 @@ nav{
 }
 
 .text{
+    position: absolute;
     width: 33%;
     color: rgba(118, 118, 118);
-    text-align:center;
-    margin:0 auto;
-    padding-left: 8px;
+    padding-left: 90px;
+    bottom: 86%;
     font-size: 13px;
 }
 
 .expensesActivity{
-    margin: 50px 0 0 60px;
+    margin: 5px 0 0 60px;
+    margin-right: 113px;
+    height: 480px;
     position: relative;
     font-family: 'Montserrat',sans-serif;
     border: 3px solid rgba(232, 239, 239, 0.95);
@@ -187,17 +191,56 @@ nav{
 }
 
 .context .remaining-money{
-    margin-top: 50px;
+    margin-top: 130px;
     font-weight: bold;
 }
 
+#graph{
+    position: absolute;
+    margin-left: 580px;
+}
+
+#graph :hover{
+    color: var(--azul);
+    cursor: pointer;
+}
+
 .context h3{
-    margin-top: 10px;
     font-size: 40px;
 }
 
 .context p{
-    margin-top: 20px;
+    margin-top: 10px;
+}
+
+.month{
+    margin-top: 13px;
+    margin-left: 695px;
+}
+
+.span1{
+    padding-left: 590px;
+}
+
+.span2{
+    padding-left: 50px;
+}
+
+
+.span3{
+    padding-left: 50px;
+}
+
+.span4{
+    padding-left: 45px;
+}
+
+.span5{
+    padding-left: 45px;
+}
+
+.span6{
+    padding-left: 45px;
 }
 
 .context .porcentaje{
@@ -210,7 +253,7 @@ nav{
 
 .expensesActivity .line{
     left: 3%;
-    top:65%;
+    top: 75%;
     position: absolute;
     height: .5%;
     inline-size: 93%;
@@ -219,7 +262,7 @@ nav{
 }
 
 .Income-Expenses{
-    margin: 80px 0 5px 35px;
+    margin: 30px 0 5px 35px;
 }
 
 .Income-Expenses .cash-green-icon{
@@ -257,20 +300,20 @@ nav{
 
 
 .hijos{
-    
+
     display: flex;
-    padding-left: 60px;
-    padding-top: 19px;
+    padding-top: 10px;
+    padding-left: 55px;
     gap: 1rem;
 }
 
 
 
 .parte1{
-    width:50% ;
+    width:45% ;
     background-color: #FFFFFF;
     border-radius: 1rem;
-    border: thin solid #F2F2F2 ;
+    border: 3px solid #F2F2F2 ;
     border-color: #F2F2F2 ;
     padding: 20px;
 
@@ -410,10 +453,10 @@ nav{
 .parte2{
     display: grid;
     grid-template-areas: "a b";
-    width: 50% ;
+    width: 45% ;
     background-color: #FFFFFF;
     border-radius: 1rem;
-    border: thin solid #F2F2F2 ;
+    border: 3px solid #F2F2F2 ;
     border-color: #F2F2F2 ;
     padding: 20px;
 }
