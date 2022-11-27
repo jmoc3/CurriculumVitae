@@ -1,16 +1,16 @@
 Morris.Bar({
     element: 'graph',
     data: [
-      {x: 'Nov', y: 0.25},
-      {x: 'Dec', y: 0.5},
-      {x: 'Jan', y: 0.8},
-      {x: 'Feb', y: 1},
-      {x: 'Mar', y: 1.5},
-      {x: 'Apr', y: 1}
+      {x: 'Nov', y: "1,445.21"},
+      {x: 'Dec', y: "2,000.00"},
+      {x: 'Jan', y: "2,842.20"},
+      {x: 'Feb', y: "3,321.24"},
+      {x: 'Mar', y: "5,320.81"},
+      {x: 'Apr', y: "3,321.24"}
     ],
     xkey: 'x',
     ykeys: ['y'],
-    labels: ['y'],
+    labels: ['$'],
     grid: false,
     axes: false,
     barSizeRatio: .8,
@@ -46,7 +46,7 @@ new Morris.Line({
   labelColor: '#BEC4C7',
   axes : false,
   grid :false,
-
+  resize:true,
   
   
   lineColors:[
@@ -68,14 +68,11 @@ new Morris.Line({
 Morris.Donut({
   element: 'Donut',
   data: [
-    {value: 298, label: 'Occupied'},
-    {value: 249, label: 'Vacan'},
-    {value: 85, label: 'Maintenance'},
+    {value: 48, label: 'Occupied'},
+    {value: 39, label: 'Vacan'},
+    {value: 13, label: 'Maintenance'},
   ],
-
-  
-
-  
+  resize:true,
   labelColor: '#11383d',
   colors: [
     '#2253DD ',
