@@ -204,10 +204,7 @@ nav{
     font-family: 'Montserrat',sans-serif;
     border: 3px solid rgba(232, 239, 239, 0.95);
     border-radius: 20px;
-}
-
-.context{
-    
+    inline-size: fit-content;
 }
 
 .context .date{
@@ -227,11 +224,6 @@ nav{
 
 }
 
-#graph{
-
-    left: 28%;
-
-}
 
 #graph :hover{
     color: var(--azul);
@@ -261,10 +253,9 @@ nav{
 .spancito {
 
     position: relative;
-    right: 13%;
-    top: 95%;
     display: flex;
-    gap: 3.2rem;
+    left: 10%;
+    gap: 2.2rem;
 
 }
 
@@ -286,8 +277,6 @@ nav{
     border-radius: 1rem;
 }
 
-.Income-Expenses{
-}
 
 .Income-Expenses .cash-green-icon{
     position: absolute;
@@ -475,6 +464,7 @@ nav{
 
 .parte2{
     display: grid;
+    inline-size: fit-content;
     grid-template-areas: "a b";
     width: 45% ;
     background-color: #FFFFFF;
