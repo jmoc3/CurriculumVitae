@@ -431,13 +431,27 @@ nav{
 
 .contGrafi{
     display: flex;
+    
 }
+
+
 
 .gra{
     display: flex;
     margin-top: 12px;
 }
 
+.row{
+    margin-left: 20%;
+    width: 50%;
+
+}
+
+#myfirstchart{
+    height: 100px;
+    width: 200px;
+
+}
 .numerosGrafica {
    padding-left: 20px;
    display: flex;
@@ -458,7 +472,7 @@ nav{
 }
 
 .grafica{
-    background-color: #1B4F53;
+    
     width: 45%;
 }
 
